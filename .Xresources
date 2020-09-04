@@ -5,8 +5,9 @@
 !!
 
 URxvt.geometry:             96x32
-URxvt.scrollBar_right:      true
-URxvt.scrollBar_floating:   true
+URxvt.scrollBar:            false
+URxvt.scrollBar_right:      false
+URxvt.scrollBar_floating:   false
 URxvt.scrollstyle:          plain
 URxvt.cursorBlink:          true
 URxvt.cursorUnderline:      true
@@ -16,7 +17,7 @@ URxvt.saveLines:            3000
 URxvt.fading:               40
 
 !! Font list and Spacing
-URxvt.font:                 xft:JetBrainsMono:size=11:antialias=true
+URxvt.font:                 xft:JetBrainsMono:size=11:antialias=true, xft:IPAGothic
 URxvt.letterSpace:           0
 !URxvt.lineSpace:            0
 

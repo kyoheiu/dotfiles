@@ -187,7 +187,7 @@ bindsym $mod+p exec --no-startup-id import -window root ~/Pictures/screenshot`da
  bar {
         status_command i3status
         position bottom
-        workspace_buttons no
+        workspace_buttons yes
 	colors {
 	statusline #B1F2FF
 	background #332E34
