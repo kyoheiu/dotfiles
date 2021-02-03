@@ -9,3 +9,4 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 PATH="$PATH":~/.local/bin
+PATH="$PATH":~/.nimble/bin
