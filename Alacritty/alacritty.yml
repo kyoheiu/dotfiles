@@ -112,7 +112,7 @@ font:
   italic:
     family: JetBrainsMono
     style: Italic  
-  size: 11
+  size: 12
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -137,40 +137,35 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
+# Colors (Iceberg Dark)
 colors:
   # Default colors
   primary:
-    background: '#1d1f21'
-    foreground: '#c5c8c6'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '#1d1f21'
-    cursor: '#ffffff'
+    background: '#161821'
+    foreground: '#d2d4de'
 
   # Normal colors
   normal:
-    black:   '#1d1f21'
-    red:     '#cc6666'
-    green:   '#b5bd68'
-    yellow:  '#e6c547'
-    blue:    '#81a2be'
-    magenta: '#b294bb'
-    cyan:    '#70c0ba'
-    white:   '#373b41'
+    black:   '#161821'
+    red:     '#e27878'
+    green:   '#b4be82'
+    yellow:  '#e2a478'
+    blue:    '#84a0c6'
+    magenta: '#a093c7'
+    cyan:    '#89b8c2'
+    white:   '#c6c8d1'
 
   # Bright colors
   bright:
-    black:   '#666666'
-    red:     '#ff3334'
-    green:   '#9ec400'
-    yellow:  '#f0c674'
-    blue:    '#81a2be'
-    magenta: '#b77ee0'
-    cyan:    '#54ced6'
-    white:   '#282a2e'
-    
+    black:   '#6b7089'
+    red:     '#e98989'
+    green:   '#c0ca8e'
+    yellow:  '#e9b189'
+    blue:    '#91acd1'
+    magenta: '#ada0d3'
+    cyan:    '#95c4ce'
+    white:   '#d2d4de'
+
   # Cursor colors
   #
   # Colors which should be used to draw the terminal cursor.
@@ -319,7 +314,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.0
+background_opacity: 1.0
 
 #selection:
   # This string contains all characters that are used as separators for
