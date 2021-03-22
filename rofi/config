@@ -1,6 +1,0 @@
-configuration {
- modi: "drun,combi";
- theme: "solarized";
- font: "JetBrainsMono 10";
- combi-modi: "window,drun,ssh";
- }
