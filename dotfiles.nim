@@ -9,16 +9,18 @@ for kind, path in walkDir(dotfiles):
   else:
     case kind
 
-    of pcFile:
+    of pcFile: # for files in ~/
       let target1 = home & name & ext
       removeFile(target1)
       path.createSymlink(target1)
 
-    of pcDir:
-      if name != ".git":
+    of pcDir: # for directories in ~/.config/
+      if name == ".git": continue
+      else:
         for ckind, cpath in walkDir(path):
           let (cdir, cname, cext) = cpath.splitFile
-          if cname != "colors":
+          if cname == "colors": continue
+          else:
             let configName = name & "/" & cname & cext
             let target2 = home & ".config/" & configName
             removeFile(target2)

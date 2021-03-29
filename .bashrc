@@ -6,8 +6,11 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
 
 PATH="$PATH":~/.local/bin
 PATH="$PATH":~/.nimble/bin
 PATH="$PATH":~/.cargo/bin/
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+eval "$(starship init bash)"
