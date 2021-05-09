@@ -1,4 +1,3 @@
-set nocompatible            " disable compatibility to old-time vi
 set ignorecase              " case insensitive matching
 set hlsearch                " highlight search results
 set tabstop=4               " number of columns occupied by a tab character
@@ -19,3 +18,15 @@ set wrapscan
 set noerrorbells
 
 colorscheme iceberg
+
+map <C-n> :NERDTreeToggle<CR>
+
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
